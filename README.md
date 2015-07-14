@@ -2,6 +2,8 @@
 
 This is an 187 byte interpreter of BrainFuck for the 6502 Apple ]\[ //e
 
+**Note:** Select and Shift-INS to paste into AppleWin or enter manually
+
         CALL-151
         300: 20 D8 F3 20 E2 F3
         306: A0 00 84 3C 84 40 84 EE
@@ -36,41 +38,75 @@ NOTE:
         REM Hello World!
         CALL -151
         6000<806.900M
-        FA62G
-        CALL 768
+        300G
 
         REM http://esolangs.org/wiki/Talk:Brainfuck
         0 "++++++++[->-[->-[->-[-]<]<]<]"
         CALL-151
         6000<806.900M
-        FA62G
-        CALL 768
-        REM -n/a-
+        300G
 
+        REM -n/a-
         0 ">++++++++[<++++++++++>-]<[>+>+<<-]>-.>-----.>"
         REM OK
-        CALL 768
+        CALL-151
+        6000<806.900M
+        300G
 
-        0 "+++++++++++++[>+++++++++>++++++++>++++++++>+++++<<<<-]>-.>.---.>++++
-        +.<----.<.>>+++++.<++++++++.>++++++.<----.----.<.-.>>+.----------.<<+
-        +.>>>-.<<<++++.>.+++++++.>..>------------------.<<-----.>.>.<-.<<+."
+        0 "+++++++++++++[>+++++++++>++++++++>++++++++>+++++<<<<-]>-.>.---.>+++++.<----.<.>>+++++.<++++++++.>++++++.<----.----.<.-.>>+.----------.<<++.>>>-.<<<++++.>.+++++++.>..>------------------.<<-----.>.>.<-.<<+."
         REM thematrixeatsyou@yahoo.co.nz
-        CALL 768
+        CALL-151
+        6000<806.900M
+        300G
 
-        0 "++++++++[->-[->-[->-[-]<]<]<]>++++++++[<++++++++++>-]<[>+>+<<-]
-        >-.>-----.>"
+        0 "++++++++[->-[->-[->-[-]<]<]<]>++++++++[<++++++++++>-]<[>+>+<<-]>-.>-----.>"
         CALL -151
         6000<806.900M
-        FA62G
-        CALL 768
+        300G
 
-        0 "++++[>++++++<-]>[>+++++>+++++++<<-]>>++++<[[>[[>>+<<-]<]>>>-]>-[>+>
-        +<<-]>]+++++[>+++++++<<++>-]>.<<."
+        0 "++++[>++++++<-]>[>+++++>+++++++<<-]>>++++<[[>[[>>+<<-]<]>>>-]>-[>+>+<<-]>]+++++[>+++++++<<++>-]>.<<."
         REM Need 32K data!!!
         REM Prints #
         CALL -151
         2000:0
         2001<2000.BFFEM
-        FA62G
-        CALL 768
+        300G
+
+# AppleWin Symbols
+
+From AppleWin press `F7` to enter the debugger, and Ctrl-V to have BrainFuck symbols
+
+        SYM CUR_DEPTH   = EE
+        SYM NUM_BRACKET = EF
+
+        SYM BRAINFUCK  = 300
+        SYM FETCH      = 316
+        SYM INTERPRET  = 324
+        SYM FIND_OP    = 326
+        SYM EXEC       = 32E
+        SYM EXIT       = 337
+
+        SYM BF_NEXT    = 338 // > 3E
+        SYM BF_PREV    = 33B // < 3C
+        SYM BF_PREV_1  = 341
+        SYM EXIT_2     = 343
+        SYM BF_INC     = 344 // + 2B
+        SYM BF_DEC     = 347 // - 2D
+        SYM STORE_DATA = 349
+        SYM BF_IN      = 34E // , 2C
+        SYM BF_OUT     = 355 // . 2E
+        SYM BF_IF      = 35A // [ 5B
+        SYM BF_IF_2    = 364
+        SYM BF_IF_4    = 371
+
+        SYM BF_FI      = 380 // ] 5D
+        SYM BF_FI_2    = 38A
+        SYM BF_FI_3    = 390
+        SYM BF_FI_4    = 39C
+
+        SYM NXTA1_8    = FCC2
+        SYM STOR_6     = FE11
+        SYM OPCODE     = F0
+        SYM OPFUNCPTR  = F8
+
 
