@@ -15,7 +15,7 @@
 ; https://github.com/Michaelangel007/brainfuck6502
 ;
 ; Discussion:
-; http://groups.google.com/group/comp.emulators.apple2/browse_thread/thread/3a6dc92aa0d9a040
+; https://groups.google.com/d/msg/comp.emulators.apple2/Om3JKqDZoEA/cwa5U1Hr3TAJ
 ;
 ; Definition:
 ; http://en.wikipedia.org/wiki/Brainfuck

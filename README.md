@@ -109,4 +109,8 @@ From AppleWin press `F7` to enter the debugger, and Ctrl-V to have BrainFuck sym
         SYM OPCODE     = F0
         SYM OPFUNCPTR  = F8
 
+# Discussion
 
+Originally posted in c.e.a2:
+
+* https://groups.google.com/d/msg/comp.emulators.apple2/Om3JKqDZoEA/cwa5U1Hr3TAJ
