@@ -57,8 +57,8 @@ NUM_BRACKET     EQU        $EF   ; // depth to find[]
 BFPC            EQU        $3C   ; BFPC/pCode same as A1L/H
 DATA            EQU        $40   ; DATA/pData same as A3L/H
 
-HGR2            EQU        $F3E2
 HGR             EQU        $F3D8
+HGR2            EQU        $F3E2
 
 COUT            EQU        $FDED
 RDKEY           EQU        $FD0C
@@ -88,8 +88,8 @@ COUT            EQU        $FDED ; trashes A, Y
         ORG $300
 ;       STA CLRTEXT     ; 8D 50 C0 ; Optional: C051 or C050
 
-        JSR HGR2        ; 20 D8 F3 ; Clear top 8K of data
-        JSR HGR         ; 20 E2 F3 ; Clear bot 8K of data
+        JSR HGR         ; 20 D8 F3 ; Clear top 8K of data
+        JSR HGR2        ; 20 E2 F3 ; Clear bot 8K of data
 
         LDY #$00        ; A0 00    ;
         STY BFPC        ; 84 3C    ;
@@ -226,7 +226,7 @@ OPFUNCPTR               ;          ; by usage: least commonly called to most
         DFB BF_OUT -1   ; 54       ; .
         DFB BF_IF  -1   ; 59       ; [
         DFB BF_PREV-1   ; 3A       ; <
-        DFB BF_END -1   ; 7F       ; ]
+        DFB BF_FI  -1   ; 7F       ; ]
         DFB BF_NEXT-1   ; 37       ; >
         DFB BF_DEC -1   ; 46       ; -
         DFB BF_INC -1   ; 43       ; +
